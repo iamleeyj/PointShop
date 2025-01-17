@@ -3,196 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코멘토 포인트 SHOP</title>
-    <style>
-        /* 기본 스타일 */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #292b2c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1, footer p {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        /* 컨텐츠 섹션 */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        /* 타이틀 및 기간 텍스트 */
-        .title, .period, .btn {
-            text-align: center;
-        }
-        .title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .period {
-            font-size: 14px;
-            color: #777;
-        }
-
-        /* 아이템 섹션 */
-        .item-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .item-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            margin-bottom: 20px;
-            padding: 15px;
-            text-align: center;
-        }
-        .item-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .item-card h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .item-card p {
-            font-size: 14px;
-            color: #777;
-        }
-
-        /* 버튼 스타일 */
-        .btn, .item-card button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn:hover, .item-card button:hover {
-            background-color: #0056b3;
-        }
-
-        /* 포인트 섹션 */
-        .point-section {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-        }
-        .point-section div {
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            width: 48%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        /* 코멘토 포인트란? 섹션 */
-        .info-section {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 40px;
-        }
-        .info-section p {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* 푸터 */
-        footer {
-            font-size: 14px;
-        }
-    </style>
+    <title>AU 포인트 자판기</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>코멘토 포인트 SHOP</h1>
-</header>
-
-<div class="container">
-    <!-- 타이틀, 기간 -->
-    <div class="title">
-        <h2>겨울맞이 아이템 가득!</h2>
-        <p class="period">2025.1.1(수) ~ 1.31(금) 전</p>
+    <!-- 공지사항 -->
+    <div class="notice">
+        <h2>AU 포인트 자판기가 새롭게 오픈했습니다!</h2>
+        <p>AU 포인트로 다양한 아이템을 교환해 보세요!</p>
     </div>
 
-    <!-- 버튼들 -->
-    <div class="btn-section">
-        <a href="#" class="btn">유의사항</a>
-        <a href="#" class="btn">이벤트 규약</a>
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>AU 포인트 자판기</h1>
     </div>
 
-    <!-- 아이템들 -->
-    <div class="item-section">
-        <div class="item-card">
-            <img src="img1.jpg" alt="아이템1">
-            <h3>아이템1</h3>
-            <p>포인트 100P</p>
-            <p>교환 가능 횟수 0/1</p>
-            <button>자세히 보기</button>
-            <button>교환하기</button>
+    <div class="vending-machine">
+        <div class="screen">현재 보유 포인트: 9999P</div>
+        <div class="item-grid">
+            <!-- 랜덤 추첨 (1000~10000원) -->
+            <div class="item">
+                <img src="img1.png" alt="랜덤 추첨 (100~1000원)">
+                <div class="name">랜덤 추첨 (100~1000원)</div>
+                <div class="price">100P</div>
+                <button>교환</button>
+            </div>
+            <!-- 랜덤 추첨 (10000~30000원) -->
+            <div class="item">
+                <img src="img1.png" alt="랜덤 추첨 (1000~3000원)">
+                <div class="name">랜덤 추첨 (1000~3000원)</div>
+                <div class="price">500P</div>
+                <button>교환</button>
+            </div>
+            <!-- 랜덤 추첨 (30000~50000원) -->
+            <div class="item">
+                <img src="img1.png" alt="랜덤 추첨 (3000~5000원)">
+                <div class="name">랜덤 추첨 (3000~5000원)</div>
+                <div class="price">1000P</div>
+                <button>교환</button>
+            </div>
+            <!-- 싸이버거 교환권 -->
+            <div class="item">
+                <img src="img2.png" alt="싸이버거 교환권">
+                <div class="name">싸이버거 교환권</div>
+                <div class="price">200P</div>
+                <button>교환</button>
+            </div>
+            <!-- 뿌링클 교환권 -->
+            <div class="item">
+                <img src="img3.png" alt="뿌링클 교환권">
+                <div class="name">뿌링클 교환권</div>
+                <div class="price">300P</div>
+                <button>교환</button>
+            </div>
+            <!-- 치즈피자 교환권 -->
+            <div class="item">
+                <img src="img4.png" alt="치즈피자 교환권">
+                <div class="name">치즈피자 교환권</div>
+                <div class="price">500P</div>
+                <button>교환</button>
+            </div>
         </div>
-        <!-- 동일한 아이템이 4x3개 반복됨 -->
-        <div class="item-card">
-            <img src="img1.jpg" alt="아이템2">
-            <h3>아이템2</h3>
-            <p>포인트 200P</p>
-            <p>교환 가능 횟수 1/1</p>
-            <button>자세히 보기</button>
-            <button>교환하기</button>
-        </div>
-        <div class="item-card">
-            <img src="img1.jpg" alt="아이템3">
-            <h3>아이템3</h3>
-            <p>포인트 150P</p>
-            <p>교환 가능 횟수 0/1</p>
-            <button>자세히 보기</button>
-            <button>교환하기</button>
+        <div class="slot">상품이 여기에 나타납니다.</div>
+        <div class="button-panel">
+            <button>⬅</button>
+            <button>⬆</button>
+            <button>⬇</button>
+            <button>➡</button>
         </div>
     </div>
 
-    <!-- 포인트 섹션 -->
-    <div class="point-section">
-        <div>
-            <h3>보유중인 코멘토 포인트</h3>
-            <p>1000P</p>
-        </div>
-        <div>
-            <h3>코멘토 포인트란?</h3>
-            <p>코멘토 포인트는 공식 홈페이지의 2025 새해 이벤트를 통해 획득할 수 있습니다. 획득한 코멘토 포인트는 코멘토 SHOP에서 다양한 아이템으로 교환 가능합니다.</p>
+    <!-- 추가 정보 -->
+    <div class="footer-section">
+        <h3>AU 포인트란?</h3>
+        <p>AU 포인트는 공식 홈페이지의 2025 새해 이벤트를 통해 획득할 수 있습니다.<br>획득한 AU 포인트는 AU 자판기에서 다양한 아이템으로 교환 가능합니다.</p>
+        <div class="footer-buttons">
+            <button>유의사항</button>
+            <button>이벤트 규약</button>
         </div>
     </div>
-
-    <!-- 코멘토 포인트란? 정보 -->
-    <div class="info-section">
-        <h3>코멘토 포인트란?</h3>
-        <p>코멘토 포인트는 공식 홈페이지의 2025 새해 이벤트를 통해 획득할 수 있습니다. 획득한 코멘토 포인트는 코멘토 SHOP에서 다양한 아이템으로 교환 가능합니다.</p>
-    </div>
-</div>
-
-<footer>
-    <p>© 2025 코멘토. All Rights Reserved.</p>
-</footer>
 
 </body>
 </html>

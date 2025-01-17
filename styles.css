@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(to bottom, #ffdab9, #f7e7ce);
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    flex-direction: column;
+    padding-top: 20px; /* 추가된 부분 */
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0.1px;
+}
+
+.header div {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.vending-machine {
+    width: 350px;
+    height: 600px;
+    background: #ff7f50;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.vending-machine::before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #e66a3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.screen {
+    width: 90%;
+    height: 60px;
+    background: #333;
+    color: #39ff14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.item {
+    background: #fffbe7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item .name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item .price {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ff7f50;
+}
+
+.item button {
+    background: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.item button:hover {
+    background: #e66a3d;
+}
+
+.slot {
+    width: 80%;
+    height: 30px;
+    background: #333;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.button-panel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    width: 100%;
+}
+
+.button-panel button {
+    background: #333;
+    color: #fff;
+    border: 2px solid #e66a3d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.button-panel button:hover {
+    background: #e66a3d;
+    color: #fff;
+}
+
+.notice, .footer-section {
+    background: #e66a3d;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-section {
+    margin-top: 50px;
+}
+
+.footer-buttons button {
+    background: #ff7f50;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footer-buttons button:hover {
+    background: #ff6347;
+}
